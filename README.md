@@ -36,23 +36,6 @@ docker run -p 8080:8080 okweb
 eb init
 ```
 
-![image-20230103182728306](/Users/user/git/til/back-end/devops/aws/beanstalk/image-20230103182728306.png)
-
-1. AWS Region 선택: 10번 (서울)
-
-![image-20230103183403315](/Users/user/git/til/back-end/devops/aws/beanstalk/image-20230103183403315.png)
-
-2. EB Application에 사용될 이름 선택 (application-admin)
-3. Docker 사용여부를 묻는 질문 (Y)
-4. Docker만을 이용해서 서비스 할지, ECS를 구성해서 사용할지 선택 (1번)
-
-![image-20230103183702117](/Users/user/git/til/back-end/devops/aws/beanstalk/image-20230103183702117.png)
-
-5. CodeCommit 사용여부 (N)
-6. SSH설정 여부와 Key 선택 (bems-keys 선택)
-
-
-
 설정완료후 `.elasticbeanstalk/config.yml`
 
 ```yaml
@@ -61,7 +44,7 @@ branch-defaults:
     environment: null
     group_suffix: null
 global:
-  application_name: application-admin
+  application_name: application-sample
   branch: null
   default_ec2_keyname: bems-keys
   default_platform: Docker running on 64bit Amazon Linux 2

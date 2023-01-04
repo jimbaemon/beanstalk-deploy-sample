@@ -9,6 +9,6 @@ public class SampleController {
 
     @GetMapping("/")
     public ResponseEntity<String> main() {
-        return ResponseEntity.ok("OK");
+        return ResponseEntity.ok("NOT OK");
     }
 }
