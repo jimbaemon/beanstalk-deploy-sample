@@ -67,8 +67,14 @@ global:
 eb create [application-name]
 ```
 
-![image-20230103184524748](/Users/user/git/til/back-end/devops/aws/beanstalk/image-20230103184524748.png)
+## EB 재배포
+```shell
+eb deploy
+```
 
-* EB로 어플리케이션 구성 완료
-
-![image-20230103193201066](/Users/user/git/til/back-end/devops/aws/beanstalk/image-20230103193201066.png)
+## 미설정 기본 구성 정보
+* Nginx 기반
+* AutoScailing 가능
+* 로드밸런서 활성화
+* 모니터링 활성화
+* 개꿀 👍
